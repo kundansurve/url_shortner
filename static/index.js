@@ -2,8 +2,8 @@ window.onload = () => {
     console.log("Started");
     const inputVal = document.querySelector("input");
     const button = document.querySelector("#btn");
-
-
+    const long_url = document.querySelector(".long_urls");
+    const short_url = document.querySelector(".short_urls");
     const form = document.querySelector(".form");
     form.addEventListener("submit", (event) => {
         event.preventDefault();
@@ -17,10 +17,16 @@ window.onload = () => {
             body: formData
         }
 
-        fetch('https://weburlshort.herokuapp.com/', options)
+        fetch('http://localhost:3000/', options)
             .then(response => response.json())
             .then(data => {
                 console.log(data.shortUrl);
+                let lurl = document.createElement('h5');
+                lurl.textContent = inputVal.value;
+                let surl = document.createElement('h5');
+                surl.textContent = data.shortUrl;
+                long_url.insertBefore(lurl, long_url.children[1]);
+                short_url.insertBefore(surl, short_url.firstChild[1]);
                 inputVal.value = data.shortUrl;
                 button.textContent = "Copy";
                 button.addEventListener("click", () => {
