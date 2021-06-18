@@ -2,7 +2,7 @@ window.onload = () => {
     console.log("Started");
     const inputVal = document.querySelector("input");
     const button = document.querySelector("#btn");
-    const copyBtn = document.querySelector("btn");
+
 
     const form = document.querySelector(".form");
     form.addEventListener("submit", (event) => {
@@ -27,10 +27,10 @@ window.onload = () => {
                     button.textContent = "Copied";
                     inputVal.select();
                     document.execCommand('copy');
-                    button.disabled = true;
+
                 });
                 inputVal.addEventListener("input", () => {
-                    button.disabled = false;
+
                     button.textContent = "Shorten";
                 });
             });
