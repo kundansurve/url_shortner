@@ -1,0 +1,67 @@
+    nav {
+        background-color: yellow;
+        display: flex;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 80px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .urlShortner {
+        margin-top: 80px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #urlinput {
+        height: 50px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 50vh 50vh;
+    }
+    
+    input {
+        width: 90%;
+        min-width: 300px;
+        border: none;
+        height: 70%;
+        border-radius: 50vh 50vh;
+        outline: none;
+        padding: 0px 20px;
+        font-size: 20px;
+    }
+    
+    .submitbutton {
+        height: 100%;
+        width: 15%;
+        border-radius: 0vh 50vh 50vh 0vh;
+        background-color: yellow;
+        box-shadow: black;
+    }
+    
+    #URlS {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer {
+        background-color: yellow;
+        margin-top: 30px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        left: 0px;
+        width: 100%;
+        bottom: 0;
+        margin-left: 0%;
+        padding-left: 0%;
+    }
