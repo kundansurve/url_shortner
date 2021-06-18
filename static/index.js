@@ -17,7 +17,7 @@ window.onload = () => {
             body: formData
         }
 
-        fetch('http://localhost:3000/', options)
+        fetch('https://weburlshort.herokuapp.com/', options)
             .then(response => response.json())
             .then(data => {
                 console.log(data.shortUrl);
