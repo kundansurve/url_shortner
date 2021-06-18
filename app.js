@@ -26,7 +26,7 @@ app.post('/', (req, res) => {
     const shorturlId = shortid.generate();
 
     users[shorturlId] = longUrl;
-    res.send({ shortUrl: `http://localhost:3000/${shorturlId}` });
+    res.send({ shortUrl: `https://weburlshort.herokuapp.com/${shorturlId}` });
 })
 
 
